@@ -1,3 +1,14 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://scenes/terrorist.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/background/ancient-city-in-the-desert-background.png" type="Texture" id=2]
+
+[node name="level" type="Node2D"]
+
+[node name="ancient-city-in-the-desert-background" type="Sprite" parent="."]
+position = Vector2( 2829.81, -402.494 )
+scale = Vector2( 8.9184, 4.2981 )
+texture = ExtResource( 2 )
+
+[node name="terrorist" parent="." instance=ExtResource( 1 )]
+position = Vector2( 122.116, 379.36 )

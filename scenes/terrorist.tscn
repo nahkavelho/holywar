@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://characters/sprites/muhamed_idle.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 65.1013
+height = 207.739
+
+[node name="terrorist" type="KinematicBody2D"]
+position = Vector2( -125.153, 2.5509 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 9.70977, -3.75009 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="muhamed_idle" type="Sprite" parent="."]
+position = Vector2( -3.39432, -47.2251 )
+texture = ExtResource( 1 )
+flip_h = true
+__meta__ = {
+"_edit_group_": true
+}
